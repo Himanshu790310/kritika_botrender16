@@ -1,13 +1,15 @@
 services:
   - type: web
-    name: kritika-doubt-solver
-    env: python
-    buildCommand: ""
-    startCommand: python main.py
+    name: kritika_botrender16
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
       - key: BOT_TOKEN
-        value: YOUR_TELEGRAM_BOT_TOKEN
-      - key: GEMINI_API_KEY
-        value: YOUR_GEMINI_API_KEY
+        value: your-bot-token-here
       - key: ADMIN_ID
-        value: "YOUR_TELEGRAM_USER_ID"
+        value: "your-admin-id"
+      - key: GEMINI_API_KEY
+        value: your-gemini-key
+      - key: RENDER_EXTERNAL_URL
+        value: https://kritika-botrender16.onrender.com/
