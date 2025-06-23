@@ -1,13 +1,13 @@
 services:
   - type: web
-    name: kritika-telegram-bot
-    runtime: python
+    name: kritika-doubt-solver
+    env: python
     buildCommand: ""
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
-        value: 7988273088:AAGhxSxjCK0H1qg51tEaf4WviU9hSF1dmfc
-      - key: ADMIN_ID
-        value: "6138277581"
+        value: YOUR_TELEGRAM_BOT_TOKEN
       - key: GEMINI_API_KEY
-        value: AIzaSyDc6wrTkV2k4AWl72NZxET6URrXCbM8haM
+        value: YOUR_GEMINI_API_KEY
+      - key: ADMIN_ID
+        value: "YOUR_TELEGRAM_USER_ID"
