@@ -6,10 +6,10 @@ services:
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
     envVars:
       - key: BOT_TOKEN
-        value: your-bot-token-here
+        value: 7988273088:AAFfS63mMo9gf3BwOTUhXELUTe7Vcw59xwU
       - key: ADMIN_ID
-        value: "your-admin-id"
+        value: "6138277581"
       - key: GEMINI_API_KEY
-        value: your-gemini-key
+        value: AIzaSyDc6wrTkV2k4AWl72NZxET6URrXCbM8haM
       - key: RENDER_EXTERNAL_URL
-        value: https://kritika-botrender16.onrender.com/
+        value: https://kritika-botrender16.onrender.com/  # Replace with your actual render link
